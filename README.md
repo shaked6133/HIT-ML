@@ -124,7 +124,26 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter notebook shap i
 | BoW | 0.5 | 0.9554 | 0.0096 |
 | TF-IDF | 2.0 | 0.9442 | 0.0082 |
 
-🏆 **Best configuration: TF-IDF + Alpha=0.5 → Final Test F1 = 0.9053**
+🏆 **Best configuration: TF-IDF + Alpha=0.5**
+- Cross-Validation F1 (train): **0.9596**
+- Final Test F1 (unseen data): **0.9053**
+
+### 📉 CV F1 vs. Final Test F1 — Generalization Gap
+
+| Metric | Value | Measured On |
+|---|---|---|
+| CV F1 Mean (best config) | 0.9596 | Training set (5-fold cross-validation) |
+| **Final Test F1** | **0.9053** | **Unseen test set (held-out 20%)** |
+
+These two numbers measure different things and are both correct:
+
+- **CV F1 (0.9596)** is measured during Grid Search on the training data. Even though 5-fold cross-validation uses separate folds for training and validation, all folds come from the same training pool — which the model has inherently been tuned on. This score is reliable for *comparing configurations*, but tends to be slightly optimistic.
+
+- **Final Test F1 (0.9053)** is measured on the 1,115 messages that were completely held out from the very beginning and never used in any training or tuning step. This is the honest, real-world performance estimate.
+
+The ~0.054 difference between the two is called the **generalization gap** — the drop in performance when moving from known training data to truly unseen data. A gap of this size is normal and expected. It indicates the model generalizes well without significant overfitting.
+
+> ✅ A Final Test F1 of **0.9053** means the model correctly identifies 9 out of 10 spam messages on completely unseen data — strong performance for a simple Naive Bayes baseline.
 
 ---
 
