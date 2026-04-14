@@ -26,6 +26,7 @@ The project covers the full ML workflow: data loading, feature engineering, mode
 
 ## 📁 Repository Structure
 ml-spam-classification/
+
 ├── spam_classification.ipynb           #Main notebook — all parts
 ├── spam_data.csv                       # Original dataset
 ├── train.csv                           # Training split (80%)
