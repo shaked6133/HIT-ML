@@ -26,14 +26,13 @@ The project covers the full ML workflow: data loading, feature engineering, mode
 
 ## 📁 Repository Structure
 ml-spam-classification/
-
-├── spam_classification.ipynb           #Main notebook — all parts
-├── spam_data.csv                       # Original dataset
-├── train.csv                           # Training split (80%)
-├── test.csv                            # Test split (20%)
-├── confusion_matrix.png                # Confusion matrix visualization
-├── errors.md                           # SHAP warnings explanation
-└── README.md                           # This file
+├── spam_classification.ipynb ← Main notebook — all parts
+├── spam_data.csv ← Original dataset
+├── train.csv ← Training split (80%)
+├── test.csv ← Test split (20%)
+├── confusion_matrix.png ← Confusion matrix visualization
+├── errors.md ← SHAP warnings explanation
+└── README.md ← This file
 
 
 
