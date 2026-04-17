@@ -72,14 +72,14 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter notebook shap i
 
 | Part | Description 
 |---|---|---|
-| **Part 1** | Introduction, student details, dataset loading |
-| **Part 2** | Feature Engineering — TF-IDF & Bag of Words |
-| **Part 3** | Algorithm — Naive Bayes Classifier |
-| **Part 4** | Training flow — 3 end-to-end examples |
-| **Part 5** | Evaluation — F1 Score, confusion matrix |
-| **Bonus** | Grid Search + K-Fold Cross Validation |
-| **Bonus** | Feature Engineering Comparison |
-| **Bonus** | SHAP Explainability |
+| **Part 1** | Introduction, student details, dataset loading | 
+| **Part 2** | Feature Engineering — TF-IDF & Bag of Words | 
+| **Part 3** | Algorithm — Naive Bayes Classifier | 
+| **Part 4** | Training flow — 3 end-to-end examples | 
+| **Part 5** | Evaluation — F1 Score, confusion matrix | 
+| **Bonus** | Grid Search + K-Fold Cross Validation | 
+| **Bonus** | Feature Engineering Comparison | 
+| **Bonus** | SHAP Explainability | 
 
 ---
 
@@ -135,7 +135,7 @@ These two numbers measure different things and are both correct:
 
 The ~0.054 difference between the two is called the **generalization gap** — the drop in performance when moving from known training data to truly unseen data. A gap of this size is normal and expected. It indicates the model generalizes well without significant overfitting.
 
-> ✅ A Final Test F1 of **0.9053** means the model correctly identifies 9 out of 10 spam messages on completely unseen data — strong performance for a simple Naive Bayes baseline.
+
 
 ---
 
@@ -168,6 +168,7 @@ We use `shap.KernelExplainer` (model-agnostic) to explain which words drive spam
 
 The SHAP summary plot reveals that top spam indicators include words such as: **free, won, prize, call, claim, txt, cash, urgent** — consistent with human intuition about spam language patterns.
 
+> ⚠️ Two non-critical warnings appear during SHAP execution due to high-dimensional sparse TF-IDF vectors. These do not affect the results. See [`errors.md`](errors.md) for a full explanation.
 
 ---
 
