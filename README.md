@@ -3,7 +3,6 @@
 **Student:** Shaked Sabag | **ID (last 4):** 2142  
 **Course:** Machine Learning  
 **Dataset:** [SMS Spam Collection — Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)  
-**Submission Deadline:** 24.05.2026
 
 ---
 
