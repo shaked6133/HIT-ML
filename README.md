@@ -41,6 +41,7 @@ The project covers the full ML workflow: data loading, feature engineering, mode
 
 ---
 
+
 ## ⚙️ Setup & Installation
 
 ### 1. Clone the repository
@@ -77,9 +78,10 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter notebook shap i
 | **Part 3** | Algorithm — Naive Bayes Classifier | 
 | **Part 4** | Training flow — 3 end-to-end examples | 
 | **Part 5** | Evaluation — F1 Score, confusion matrix | 
-| **Bonus** | Grid Search + K-Fold Cross Validation | 
-| **Bonus** | Feature Engineering Comparison | 
-| **Bonus** | SHAP Explainability | 
+| **Bonus 6.1** | Special Quality Metric Matthews Correlation Coefficient (MCC) | 
+| **Bonus 6.2** | Grid Search + K-Fold Cross Validation | 
+| **Bonus 6.3** | Feature Engineering Comparison & Imbalanced Data Handling | 
+| **Bonus 6.4** | SHAP Explainability | 
 
 ---
 
@@ -160,6 +162,7 @@ P(spam | words) ∝ P(words | spam) × P(spam)
 
 TF-IDF outperforms BoW because it down-weights common words that appear across all messages, allowing the model to focus on discriminative spam vocabulary.
 
+
 ---
 
 ## 💡 SHAP Explainability
@@ -167,8 +170,6 @@ TF-IDF outperforms BoW because it down-weights common words that appear across a
 We use `shap.KernelExplainer` (model-agnostic) to explain which words drive spam predictions. `LinearExplainer` is not compatible with `MultinomialNB` since it is not a linear model.
 
 The SHAP summary plot reveals that top spam indicators include words such as: **free, won, prize, call, claim, txt, cash, urgent** — consistent with human intuition about spam language patterns.
-
-> ⚠️ Two non-critical warnings appear during SHAP execution due to high-dimensional sparse TF-IDF vectors. These do not affect the results. See [`errors.md`](errors.md) for a full explanation.
 
 ---
 
