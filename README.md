@@ -70,8 +70,8 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter notebook shap i
 
 ## 🧪 Notebook Structure
 
-| Part | Description 
-|---|---|---|
+| Part | Description |
+|---|---|
 | **Part 1** | Introduction, student details, dataset loading | 
 | **Part 2** | Feature Engineering — TF-IDF & Bag of Words | 
 | **Part 3** | Algorithm — Naive Bayes Classifier | 
