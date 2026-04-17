@@ -13,14 +13,6 @@ A complete supervised machine learning pipeline for **binary text classification
 
 The project covers the full ML workflow: data loading, feature engineering, model training, evaluation, hyperparameter optimization, and model explainability.
 
----
-
-## 🤖 AI Tools Used
-
-| Tool | Query |
-|---|---|
-| Perplexity AI | "explain TF-IDF vectorization for spam detection" |
-| Perplexity AI | "how to implement Naive Bayes classifier with sklearn" |
 
 ---
 
@@ -78,16 +70,16 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter notebook shap i
 
 ## 🧪 Notebook Structure
 
-| Part | Description | Points |
+| Part | Description 
 |---|---|---|
-| **Part 1** | Introduction, student details, dataset loading | 15 |
-| **Part 2** | Feature Engineering — TF-IDF & Bag of Words | 30 |
-| **Part 3** | Algorithm — Naive Bayes Classifier | 30 |
-| **Part 4** | Training flow — 3 end-to-end examples | 10 |
-| **Part 5** | Evaluation — F1 Score, confusion matrix | 10 |
-| **Bonus** | Grid Search + K-Fold Cross Validation | +5 |
-| **Bonus** | Feature Engineering Comparison | +20 |
-| **Bonus** | SHAP Explainability | +10 |
+| **Part 1** | Introduction, student details, dataset loading 
+| **Part 2** | Feature Engineering — TF-IDF & Bag of Words
+| **Part 3** | Algorithm — Naive Bayes Classifier
+| **Part 4** | Training flow — 3 end-to-end examples
+| **Part 5** | Evaluation — F1 Score, confusion matrix
+| **Bonus** | Grid Search + K-Fold Cross Validation
+| **Bonus** | Feature Engineering Comparison
+| **Bonus** | SHAP Explainability
 
 ---
 
@@ -176,7 +168,6 @@ We use `shap.KernelExplainer` (model-agnostic) to explain which words drive spam
 
 The SHAP summary plot reveals that top spam indicators include words such as: **free, won, prize, call, claim, txt, cash, urgent** — consistent with human intuition about spam language patterns.
 
-> ⚠️ Two non-critical warnings appear during SHAP execution due to high-dimensional sparse TF-IDF vectors. These do not affect the results. See [`errors.md`](errors.md) for a full explanation.
 
 ---
 
