@@ -72,14 +72,14 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter notebook shap i
 
 | Part | Description 
 |---|---|---|
-| **Part 1** | Introduction, student details, dataset loading 
-| **Part 2** | Feature Engineering — TF-IDF & Bag of Words
-| **Part 3** | Algorithm — Naive Bayes Classifier
-| **Part 4** | Training flow — 3 end-to-end examples
-| **Part 5** | Evaluation — F1 Score, confusion matrix
-| **Bonus** | Grid Search + K-Fold Cross Validation
-| **Bonus** | Feature Engineering Comparison
-| **Bonus** | SHAP Explainability
+| **Part 1** | Introduction, student details, dataset loading |
+| **Part 2** | Feature Engineering — TF-IDF & Bag of Words |
+| **Part 3** | Algorithm — Naive Bayes Classifier |
+| **Part 4** | Training flow — 3 end-to-end examples |
+| **Part 5** | Evaluation — F1 Score, confusion matrix |
+| **Bonus** | Grid Search + K-Fold Cross Validation |
+| **Bonus** | Feature Engineering Comparison |
+| **Bonus** | SHAP Explainability |
 
 ---
 
